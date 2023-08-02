@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 18px;
+}
+body {
+    background: #e2e0e086;
+}
+.container {
+    background: white;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.container .containerTop {
+    background: #ffa400;
+    height: 66px;
+}
+.container .containerTop h1 {
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+.container .containerCorp {
+    padding: 24px;
+}
+label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+label>span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 48px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    padding-left: 16px;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    padding-left: 16px;
+}
+.container .containerCorp button {
+    background: #ffa400;
+    border-radius: 25px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 36px;
+}
+.container .containerCorp button:hover {
+    opacity: 0.9;
+}
+.container .containerCorp button:active {
+    opacity: 0.7;
+}
+section {
+    height: auto;
+    min-height: 150px;
+    width: 100%;
+    border: 1px solid #1B83E2;
+    border-radius: 4px;
+}
+.boxElements {
+    text-align: center;
+    padding: 10px;
+}
+.boxElements img{
+    width: 50px;
+}
+.numeroText {
+    font-weight: 400;
+    font-size: 20px;
+    color: #777777;
+    margin-bottom: 5px;
+}
+.currency-value {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1B83E2;
+}
+.container section .boxElements .currency-value{
+    word-break: break-all;
+}
+
+@media (max-width:785px) {
+    .container {
+    width: 90%;
+    margin-top: 10%;
+    }
+}

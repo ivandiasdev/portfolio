@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(237, 234, 234);
+}
+.containerTop h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.container .containetCorp .modalFlex {
+  display: flex;
+  width: 80%;
+}
+@media (max-width:785px) {
+  .container .containetCorp .modalFlex {
+    width: 100%;
+  }
+}
+
+.container .containetCorp .inputFiel h2{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .containetCorp .inputFiel input {
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 90%;
+  height: 48px;
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  padding-left: 16px;
+}
+.container .containetCorp .inputField h2{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .containetCorp .inputField .productOne input{
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 160%;
+  height: 48px;
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  padding-left: 16px;
+}
+.container .containetCorp .inputField .precoOne input{
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 160%;
+  height: 48px;
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  padding-left: 16px;
+}
+.container .modal-consumption h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .modal-consumption .modal-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.container .modal-consumption .modal-flex .productCadastr{
+  display: flex;
+  flex-direction: column;
+}
+.container .modal-consumption .modal-flex .productCadastr h2{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .modal-consumption .modal-flex .productCadastr select{
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 80%;
+  height: 48px;
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #555555;
+  padding-left: 16px;
+}
+.container .modal-consumption .modal-flex .clientCadastr{
+  display: flex;
+  flex-direction: column;
+}
+.container .modal-consumption .modal-flex .clientCadastr h2{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .containetCorp, .modal-consumption {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.modal-button {
+  background-color: #ffa400;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+}
+.modal-button:hover {
+  background-color: #ffa450;
+}
+#shared {
+  height: 60px;
+}
+.modal-self {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:785px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .modalFlex{
+    width: 100%;
+    flex-direction: column;
+  }
+  .containetCorp{
+    display: flex;
+    flex-direction: column;
+  }
+  .inputField{
+    display: flex;
+    flex-direction: column;
+  }
+  .container .containetCorp .inputField .productOne input{
+    width: 100%;
+  }
+  .container .containetCorp .inputField .precoOne input{
+    width: 100%;
+  }
+  .container .modal-consumption{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .modal-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .container .containetCorp .inputFiel input{
+    width: 100%;
+  }
+  .container .containetCorp .inputField h2{
+    margin-top: 10px;
+  }
+  .container .modal-consumption .modal-flex .clientCadastr h2{
+    margin-top: 10px;
+  }
+  .container .containetCorp, .modal-consumption{
+    padding: 10px;
+  }
+  .container .modal-consumption .modal-flex .productCadastr select{
+    width: 100%;
+  }
+  .modal-button{
+    width: 100%;
+  }
+}

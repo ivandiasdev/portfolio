@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>        
+    <div class="containerTop">
+            <h1>Divisor de Conta</h1>
+    </div>
+    <div class="container" id="app">
+        <div class="containetCorp" id="customer-product-modal">
+            <div class="modal-flex modalFlex">
+                <div class="inputFiel">
+                    <h2>Cadastro Cliente</h2>
+                    <label for="customer">Nome do cliente:</label>
+                    <input placeholder="Maria, Claudio, Marcos..." type="text" id="customer" />
+                    <button class="modal-button" onclick="addCustomer()">Cadastrar Cliente</button>
+                </div>
+                <div class="inputField">
+                    <h2>Cadastro Produtos</h2>
+                    <div class="productOne">
+                        <label for="product">Nome do produto:</label>
+                        <input placeholder="Pizza, Frango" type="text" id="product" />
+                    </div>
+                    <div class="precoOne">
+                        <label for="price">Preço (R$):</label>
+                        <input placeholder="R$100" type="text" id="price" />
+                    </div>
+                    <button class="modal-button" onclick="addProduct()">Cadastrar Produto</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-consumption" id="consumption-modal">
+            <div class="modal-flex input-field">
+                <div class="productCadastr">
+                    <h2>Produtos Cadastrados</h2>
+                    <label for="product-consumed">Produto:</label>
+                    <select id="product-consumed"></select>
+                    <label for="taxa-consumed">Taxa de Serviço</label>
+                    <select id="taxa-consumed">
+                        <option value="1">Sem Taxa 10%</option>
+                        <option value="1.1">Com Taxa 10%</option>
+                    </select>
+                </div>
+                <div class="clientCadastr">
+                    <h2>Clientes Cadastrados</h2>
+                    <label>Produto compartilhado por:</label>
+                    <div id="shared"></div>
+                    <button class="modal-button" onclick="addConsumedProduct()">Adicionar</button>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div id="result"></div>
+            <button class="modal-button" onclick="calculateBill()">Calcular Conta</button>
+        </div>
+        <button class="modal-button" onclick="resetApp()">Limpar tudo</button>
+    </div>
+<script src="./app/app.js"></script>
+</body>
+</html>

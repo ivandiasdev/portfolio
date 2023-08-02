@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Conversor de Numeros Romanos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerTop">
+            <h1>Conversor de Numero Romanos</h1>
+        </div>
+        <div class="containerCorp">
+            <label>
+                Converter <b>de</b>
+                <select id="selectNumeroDe">
+                    <option>IVXM Numero Romano</option>
+                    <option>0123 Numero Arabico</option>
+                </select>
+            </label>
+            <label>Converter <b>para</b>
+                <select id="selectNumeroPara">
+                    <option>0123 Numero Arabico</option>
+                    <option>IVXM Numero Romano</option>
+                </select>
+            </label>
+            <label>
+                <span>Numero</span>
+                <input placeholder="IVXX, 0123" id="inputNumero">
+            </label>
+            <button type="button" id="converterButton">
+                Converter
+            </button>
+            <section>
+                <div class="boxElements">
+                    <img src="./img/relogio.png" alt="relogioLogo" id="relogioLogo">
+                    <p class="numeroText">Resultado</p>
+                    <p class="currency-value" id="real-value-text"> XXCM</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="./dados/script.js"></script>
+</html>

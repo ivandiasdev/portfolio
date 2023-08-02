@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA SIMPLES</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./dados/app.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h3>PRIMEIRA CALCULADORA 18/11/22</h3>
+        <br>
+        <img src="https://cdn.izap.com.br/arnia.com.br/plus/images?src=tema/plusfiles/Logotipo.png&" alt="LOGO">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <button class="bot" onclick="clean()">C</button>
+            <button class="bot" onclick="back()" style="width: 109px;">Apagar</button>
+            <button class="bot2" onclick="insert('/')">÷</button><br>
+            <button class="bot" onclick="insert('1')">1</button>
+            <button class="bot" onclick="insert('2')">2</button>
+            <button class="bot" onclick="insert('3')">3</button>
+            <button class="bot2" onclick="insert('-')">-</button><br>
+            <button class="bot" onclick="insert('4')">4</button>
+            <button class="bot" onclick="insert('5')">5</button>
+            <button class="bot" onclick="insert('6')">6</button>
+            <button class="bot2" onclick="insert('*')">X</button><br>
+            <button class="bot" onclick="insert('7')">7</button>
+            <button class="bot" onclick="insert('8')">8</button>
+            <button class="bot" onclick="insert('9')">9</button>
+            <button class="bot2" onclick="insert('+')">+</button><br>
+            <button class="bot" onclick="insert('0')">0</button>
+            <button class="bot" onclick="insert('.')">.</button>
+            <button class="bot" onclick="calcular('=')" style="width: 109px;">=</button>
+        </div>
+    </div>
+</body>
+</html>
